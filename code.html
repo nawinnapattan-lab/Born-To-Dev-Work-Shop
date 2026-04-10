@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e5e2db",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#31312c",
+                        "primary-fixed-dim": "#b0ceb2",
+                        "tertiary": "#6b5c4c",
+                        "on-tertiary-fixed": "#241a0e",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#cae2fc",
+                        "primary-fixed": "#cceace",
+                        "surface-container-low": "#f6f3ec",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#b1c9e2",
+                        "primary-container": "#8ba88e",
+                        "on-tertiary-fixed-variant": "#524436",
+                        "outline": "#737972",
+                        "primary": "#4a654e",
+                        "tertiary-fixed": "#f4dfcb",
+                        "background": "#fcf9f2",
+                        "on-secondary-fixed-variant": "#32495d",
+                        "surface-container": "#f1eee7",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#cde5fe",
+                        "on-primary-container": "#233d29",
+                        "on-background": "#1c1c18",
+                        "on-surface-variant": "#424842",
+                        "on-secondary-fixed": "#021d30",
+                        "surface-bright": "#fcf9f2",
+                        "surface-container-high": "#ebe8e1",
+                        "on-primary-fixed-variant": "#334d38",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#423528",
+                        "on-error-container": "#93000a",
+                        "secondary": "#496176",
+                        "inverse-primary": "#b0ceb2",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f3f0e9",
+                        "surface": "#fcf9f2",
+                        "tertiary-container": "#b09e8c",
+                        "on-surface": "#1c1c18",
+                        "on-secondary-container": "#4e657a",
+                        "surface-dim": "#dcdad3",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#d7c3b0",
+                        "on-primary-fixed": "#07200f",
+                        "surface-variant": "#e5e2db",
+                        "surface-tint": "#4a654e",
+                        "outline-variant": "#c2c8c0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen pb-32">
+<!-- Top Navigation -->
+<nav class="fixed top-0 z-50 w-full bg-[#fcf9f2]/80 backdrop-blur-xl flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity duration-500">menu</span>
+</div>
+<span class="font-notoSerif text-2xl font-semibold text-primary">Presence</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity duration-500">settings</span>
+</div>
+</nav>
+<main class="max-w-5xl mx-auto px-6 pt-24 space-y-12">
+<!-- Profile Header -->
+<header class="flex flex-col md:flex-row items-center md:items-end gap-8 pt-8">
+<div class="relative group">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary to-primary-container rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+<img alt="Elena Grace Profile" class="relative w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-surface-container-lowest" data-alt="close-up portrait of a woman with serene expression in soft daylight, natural skin texture, blurred outdoor background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8rQDPwLD9LxChP1cH1PZif-WwdhMWWZOp2bg4uYviu0YjKkhX5fkFv_fYIH8AHmqygIxjm7oNqSGy63VF87Xz5KhNzxMe-AJ9EVBU7Gp6RBehVqXtAXy9rNLvSDdGIbImHqAWmrZNd_NTimjlbtgQ27knT9HVxdSVulFQoHyDAQ_oK8rakM_vO2JP2vRbkrzBLGp7vsfv9kLQ6zjoRyI5WE1xRmJgQTv02u4T6Nop3l4DX5S5PwYPvO5-htZ2KbwBjCoB5TATq3eB"/>
+<div class="absolute bottom-1 right-2 bg-primary-container text-on-primary-container p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">edit</span>
+</div>
+</div>
+<div class="text-center md:text-left flex-1 space-y-2">
+<h1 class="font-notoSerif text-4xl md:text-5xl font-bold tracking-tight">Elena Grace</h1>
+<p class="text-on-surface-variant font-medium opacity-80 italic">Seeker of stillness since 2022</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
+<span class="px-4 py-1 bg-surface-container-high rounded-full text-sm font-semibold text-primary">Advanced Seeker</span>
+<span class="px-4 py-1 bg-surface-container-high rounded-full text-sm font-semibold text-primary">Breath Master</span>
+</div>
+</div>
+</header>
+<!-- Mindfulness Journey Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Counter Card -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between items-center text-center relative overflow-hidden group">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
+<div class="space-y-1 z-10">
+<h3 class="text-on-surface-variant uppercase tracking-[0.2em] text-[10px] font-bold">Total Mindful Time</h3>
+<p class="font-notoSerif text-6xl font-bold text-primary">1,284</p>
+<p class="text-primary font-medium">Minutes</p>
+</div>
+<div class="pt-8 w-full z-10">
+<div class="flex justify-between text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-wider">
+<span>Monthly Goal</span>
+<span>82%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container w-[82%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Calendar/Streak Card -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="font-notoSerif text-2xl font-semibold">Mindfulness Journey</h3>
+<p class="text-on-surface-variant text-sm">Consistent practice builds a resilient mind.</p>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-bold text-primary">12 Day Streak</span>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-4">
+<!-- Weekdays Labels -->
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Mon</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Tue</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Wed</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Thu</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Fri</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Sat</div>
+<div class="text-center text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Sun</div>
+<!-- Week Activity -->
+<div class="aspect-square flex items-center justify-center rounded-full bg-primary text-on-primary">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<div class="aspect-square flex items-center justify-center rounded-full bg-primary text-on-primary">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<div class="aspect-square flex items-center justify-center rounded-full bg-primary text-on-primary">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<div class="aspect-square flex items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="font-bold">14</span>
+</div>
+<div class="aspect-square flex items-center justify-center rounded-full border-2 border-primary/10 text-on-surface-variant">
+<span class="font-bold opacity-40">15</span>
+</div>
+<div class="aspect-square flex items-center justify-center rounded-full border-2 border-primary/10 text-on-surface-variant">
+<span class="font-bold opacity-40">16</span>
+</div>
+<div class="aspect-square flex items-center justify-center rounded-full border-2 border-primary/10 text-on-surface-variant">
+<span class="font-bold opacity-40">17</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Favorite Practices (Horizontal Scroll) -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-notoSerif text-3xl font-semibold">Favorite Practices</h2>
+<p class="text-on-surface-variant text-sm">Your sanctuary of curated calm.</p>
+</div>
+<button class="text-primary font-bold text-sm hover:underline transition-all">View All</button>
+</div>
+<div class="flex gap-6 overflow-x-auto no-scrollbar pb-4 -mx-2 px-2">
+<!-- Practice 1 -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-4">
+<img alt="Morning Dew" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="misty forest at dawn with sunlight filtering through tall pine trees and soft green moss" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBonjZ3TqJURGFZPC4tBAZ2r7u98GTQ8G73ndpLVn64GpxQdCVFhUO6owfaYEsFK_SCZZ0sDheTp0u7iXYCym5QiY-OimUO2m3cHDcYGZwdkhD5FThHYoIp4_GmS5HN4V8HqVraR4F4IIOYk06ffscJfn22AQgf5JsJceCV6e3Znccse3XSmXjxbhV1sWZFN3u16JvO-zME5uug2Vst59Fev9OAUTFfkyeluW2atL1daDf483RN3_3nBrh6FIOzsKm-_m8tDOohRjJc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="text-[10px] uppercase font-bold tracking-widest opacity-80">15 Minutes</span>
+<h4 class="font-notoSerif text-xl font-bold">Morning Dew</h4>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+<!-- Practice 2 -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-4">
+<img alt="Ocean Breath" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="overhead view of turquoise ocean waves gently breaking on white sand beach in soft afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfLk2glIS47CFfY_miN-s-yryt1VcZcW6DD2LxqMwv0KDcyLQ9XFTrpyPs66nLlVB-booIEpR0xqbh06UcTbCEwrrw_8jUjm1qFLqhgCOhjZ4AX17YWtwG3qd-9t72mEQcic5OtKlfKHMMf5qnRUZgbGQnLYkHdg315N8RYZu3iItqhJpYF9gR5e7op6tpJIwRgvj8neIQVUKn0Dcp6lW2XbWmxEB7juuMo4FvQTanNOXgT-rxh52QKQmpAysS1UUYdEN94-8IPjGn"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="text-[10px] uppercase font-bold tracking-widest opacity-80">20 Minutes</span>
+<h4 class="font-notoSerif text-xl font-bold">Ocean Breath</h4>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+<!-- Practice 3 -->
+<div class="min-w-[280px] group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-4">
+<img alt="Zen Garden" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close-up of stacked river stones on fine white sand with rake marks in a japanese zen garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdxKYkIiPKu3wSrD3KhLyaoGpgCczbOAW8RN9SP6pnZqFNDplNO6cZBQOWhGWi1OfcNsScrnoq7VpPEIjbjjuXIYWXgW8RWRwe5DmT2U43VrwMpPgjg-DRej8MUOXkwTyC_YBVepJDdXnNPKGJGVKG_eSLotVuT8bJSFihyc-X1Joy1Vc_STA_FOzbjNeDlJtI49AzRJNSU3-LBBPEo8HBzZKzVgKqawRoCcBxqk03QYcGi-IdHUqANzfEm9d3HRS47WZdqV1td2id"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="text-[10px] uppercase font-bold tracking-widest opacity-80">10 Minutes</span>
+<h4 class="font-notoSerif text-xl font-bold">Zen Garden</h4>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Sessions -->
+<section class="space-y-6">
+<h2 class="font-notoSerif text-3xl font-semibold">Recent Sessions</h2>
+<div class="space-y-4">
+<!-- Session 1 -->
+<div class="flex items-center gap-6 p-4 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors duration-500 cursor-pointer group">
+<img alt="Deep Sleep Session" class="w-20 h-20 rounded-lg object-cover" data-alt="abstract soft focus image of starlit night sky with deep navy and purple tones and cosmic dust" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClipCNpg8JU_ujJvZhlv5wha5L_KiZHXNPaeu4ypdWC-KBkCHUx5Tqc4fxvm8hi9k79FPSaRL-b6hoPR8tNH0f6W8mWsSEsbhUG9jgCTByvdLKhAJIuJ49HXCMI9hNt9WfVKYOjyP-2qq1q_HLOQ3SF7oq5G4qUsCCSytGLOVs600to42IDyTEivQi1bAg8D1rK_rJ5cg_EBpGc31DY79S8tzp7GXeRKhn6qDrwpsiREwL6IDQePBSETbImHx3_Vm0zrtSRpzpiAz4"/>
+<div class="flex-1">
+<h4 class="font-bold text-lg">Deep Sleep Voyage</h4>
+<p class="text-on-surface-variant text-sm">Yesterday • 22:30</p>
+</div>
+<div class="text-right">
+<span class="block font-bold text-primary">25 min</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Duration</span>
+</div>
+<span class="material-symbols-outlined text-primary-container group-hover:translate-x-1 transition-transform duration-500">arrow_forward_ios</span>
+</div>
+<!-- Session 2 -->
+<div class="flex items-center gap-6 p-4 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors duration-500 cursor-pointer group">
+<img alt="Focus Flow Session" class="w-20 h-20 rounded-lg object-cover" data-alt="single vibrant green leaf with detailed veins and water droplets in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm2PCCnKf8ALpb096f6rJdhFdSQsw_U7AM7U2xbypg3LJMdCpxGdQqKPcj921iSODQXlVlTHeT05G2DE1_Tp54QU5SGvLLPCut9IEVJH5Lx2mHs_e5nPxt9QAG2UZWYCEYdIQBdFr0rYEk7DQcQYF0svZYkUGlGnRi3HNrVbsI_I3NdF83hiljnvW2OeTtteOSH6zCV_y1M6eg0-DHSURW2nS8Mo7USFtQ8u3N2ZFY1LZxdQGWp6BHYeMVIcaLWY55c6xliA83Y2PQ"/>
+<div class="flex-1">
+<h4 class="font-bold text-lg">Focused Awareness</h4>
+<p class="text-on-surface-variant text-sm">2 days ago • 08:15</p>
+</div>
+<div class="text-right">
+<span class="block font-bold text-primary">12 min</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Duration</span>
+</div>
+<span class="material-symbols-outlined text-primary-container group-hover:translate-x-1 transition-transform duration-500">arrow_forward_ios</span>
+</div>
+<!-- Session 3 -->
+<div class="flex items-center gap-6 p-4 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors duration-500 cursor-pointer group">
+<img alt="Mountain Air Session" class="w-20 h-20 rounded-lg object-cover" data-alt="majestic snow-capped mountain peaks reflecting in a crystal clear alpine lake at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbcCcTYL-d32M-fbLs2IIeIXCWxZqZ1y_2khrMQnZtdA24hLcFZ1pZB3eW0YLaq0Yyx2cuIX_D0d5heWvg4NFodgRbHe3v5iFn1lDo_XqW6CJiGvACPpYiHdLqudSJRGzCa4w4XLNnZya-BhcWeKutQciDQUrp6GxQ7PmNyrdAGbgJeDy0wdk6Di8-t07ulMTPLzCr5i3TPuTp6czB1dzdbbFdaCkBW2z8KW38-hcZ0MkWdnm8AAGAnzyxr-_rG5EeNYy14kvA6pr4"/>
+<div class="flex-1">
+<h4 class="font-bold text-lg">Mountain Stillness</h4>
+<p class="text-on-surface-variant text-sm">3 days ago • 17:45</p>
+</div>
+<div class="text-right">
+<span class="block font-bold text-primary">18 min</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Duration</span>
+</div>
+<span class="material-symbols-outlined text-primary-container group-hover:translate-x-1 transition-transform duration-500">arrow_forward_ios</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full bg-[#fcf9f2]/80 backdrop-blur-xl flex justify-around items-center px-8 pb-6 pt-4 rounded-t-xl shadow-[0_-4px_32px_rgba(28,28,24,0.04)] z-50">
+<a href="daily.html" class="flex flex-col items-center justify-center text-[#4a654e]/50 p-2 hover:text-[#4a654e] transition-all duration-500 scale-95 active:scale-90">
+<span class="material-symbols-outlined">self_care</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Daily</span>
+</a>
+<a href="explore.html" class="flex flex-col items-center justify-center text-[#4a654e]/50 p-2 hover:text-[#4a654e] transition-all duration-500 scale-95 active:scale-90">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Explore</span>
+</a>
+<a href="code.html" class="flex flex-col items-center justify-center bg-[#8ba88e]/20 text-[#4a654e] rounded-full px-5 py-2 scale-95 active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Profile</span>
+</a>
+<a href="stats.html" class="flex flex-col items-center justify-center text-[#4a654e]/50 p-2 hover:text-[#4a654e] transition-all duration-500 scale-95 active:scale-90">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Stats</span>
+</a>
+</nav>
+</body></html>

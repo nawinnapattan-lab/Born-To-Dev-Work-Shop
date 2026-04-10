@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e5e2db",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#31312c",
+                        "primary-fixed-dim": "#b0ceb2",
+                        "tertiary": "#6b5c4c",
+                        "on-tertiary-fixed": "#241a0e",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#cae2fc",
+                        "primary-fixed": "#cceace",
+                        "surface-container-low": "#f6f3ec",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#b1c9e2",
+                        "primary-container": "#8ba88e",
+                        "on-tertiary-fixed-variant": "#524436",
+                        "outline": "#737972",
+                        "primary": "#4a654e",
+                        "tertiary-fixed": "#f4dfcb",
+                        "background": "#fcf9f2",
+                        "on-secondary-fixed-variant": "#32495d",
+                        "surface-container": "#f1eee7",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#cde5fe",
+                        "on-primary-container": "#233d29",
+                        "on-background": "#1c1c18",
+                        "on-surface-variant": "#424842",
+                        "on-secondary-fixed": "#021d30",
+                        "surface-bright": "#fcf9f2",
+                        "surface-container-high": "#ebe8e1",
+                        "on-primary-fixed-variant": "#334d38",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#423528",
+                        "on-error-container": "#93000a",
+                        "secondary": "#496176",
+                        "inverse-primary": "#b0ceb2",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f3f0e9",
+                        "surface": "#fcf9f2",
+                        "tertiary-container": "#b09e8c",
+                        "on-surface": "#1c1c18",
+                        "on-secondary-container": "#4e657a",
+                        "surface-dim": "#dcdad3",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#d7c3b0",
+                        "on-primary-fixed": "#07200f",
+                        "surface-variant": "#e5e2db",
+                        "surface-tint": "#4a654e",
+                        "outline-variant": "#c2c8c0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen pb-32">
+<!-- Top Navigation -->
+<nav class="fixed top-0 z-50 w-full bg-[#fcf9f2]/80 backdrop-blur-xl flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity duration-500">menu</span>
+</div>
+<span class="font-notoSerif text-2xl font-semibold text-primary">Presence</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity duration-500">settings</span>
+</div>
+</nav>
+<main class="max-w-5xl mx-auto px-6 pt-24 space-y-12">
+<!-- Explore Header -->
+<section class="text-center space-y-8 pt-8">
+<div class="relative group">
+<div class="absolute inset-0 bg-gradient-to-tr from-secondary to-secondary-container rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+<div class="relative w-24 h-24 mx-auto bg-gradient-to-br from-secondary to-secondary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-on-secondary" style="font-variation-settings: 'FILL' 1;">explore</span>
+</div>
+</div>
+<h1 class="font-notoSerif text-4xl md:text-5xl font-bold tracking-tight">Explore Practices</h1>
+<p class="text-on-surface-variant font-medium opacity-80 italic max-w-2xl mx-auto">Discover new ways to cultivate mindfulness. Browse our curated collection of guided meditations and breathing exercises.</p>
+</section>
+
+<!-- Categories -->
+<section class="space-y-6">
+<h2 class="font-notoSerif text-3xl font-semibold">Categories</h2>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-4 -mx-2 px-2">
+<div class="flex-shrink-0 px-6 py-3 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-semibold cursor-pointer hover:shadow-lg transition-all duration-500">
+All Practices
+</div>
+<div class="flex-shrink-0 px-6 py-3 bg-surface-container-high text-primary rounded-full font-semibold cursor-pointer hover:bg-surface-container transition-colors duration-500">
+Sleep
+</div>
+<div class="flex-shrink-0 px-6 py-3 bg-surface-container-high text-primary rounded-full font-semibold cursor-pointer hover:bg-surface-container transition-colors duration-500">
+Focus
+</div>
+<div class="flex-shrink-0 px-6 py-3 bg-surface-container-high text-primary rounded-full font-semibold cursor-pointer hover:bg-surface-container transition-colors duration-500">
+Anxiety
+</div>
+<div class="flex-shrink-0 px-6 py-3 bg-surface-container-high text-primary rounded-full font-semibold cursor-pointer hover:bg-surface-container transition-colors duration-500">
+Stress Relief
+</div>
+<div class="flex-shrink-0 px-6 py-3 bg-surface-container-high text-primary rounded-full font-semibold cursor-pointer hover:bg-surface-container transition-colors duration-500">
+Beginner
+</div>
+</div>
+</section>
+
+<!-- Featured Practices -->
+<section class="space-y-6">
+<h2 class="font-notoSerif text-3xl font-semibold">Featured This Week</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Practice 1 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-500">
+<div class="relative aspect-[4/3]">
+<img alt="Loving Kindness" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="soft golden light illuminating a peaceful meditation space with cushions and natural elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBonjZ3TqJURGFZPC4tBAZ2r7u98GTQ8G73ndpLVn64GpxQdCVFhUO6owfaYEsFK_SCZZ0sDheTp0u7iXYCym5QiY-OimUO2m3cHDcYGZwdkhD5FThHYoIp4_GmS5HN4V8HqVraR4F4IIOYk06ffscJfn22AQgf5JsJceCV6e3Znccse3XSmXjxbhV1sWZFN3u16JvO-zME5uug2Vst59Fev9OAUTFfkyeluW2atL1daDf483RN3_3nBrh6FIOzsKm-_m8tDOohRjJc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-bold uppercase tracking-widest rounded-full">New</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="text-[10px] uppercase font-bold tracking-widest opacity-80">25 Minutes</span>
+<h4 class="font-notoSerif text-xl font-bold">Loving Kindness</h4>
+<p class="text-sm opacity-90">Cultivate compassion for yourself and others</p>
+</div>
+</div>
+</div>
+<!-- Practice 2 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-500">
+<div class="relative aspect-[4/3]">
+<img alt="Body Scan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="peaceful zen garden with raked sand patterns and smooth stones in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdxKYkIiPKu3wSrD3KhLyaoGpgCczbOAW8RN9SP6pnZqFNDplNO6cZBQOWhGWi1OfcNsScrnoq7VpPEIjbjjuXIYWXgW8RWRwe5DmT2U43VrwMpPgjg-DRej8MUOXkwTyC_YBVepJDdXnNPKGJGVKG_eSLotVuT8bJSFihyc-X1Joy1Vc_STA_FOzbjNeDlJtI49AzRJNSU3-LBBPEo8HBzZKzVgKqawRoCcBxqk03QYcGi-IdHUqANzfEm9d3HRS47WZdqV1td2id"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="text-[10px] uppercase font-bold tracking-widest opacity-80">30 Minutes</span>
+<h4 class="font-notoSerif text-xl font-bold">Body Scan Meditation</h4>
+<p class="text-sm opacity-90">Deep relaxation through mindful awareness</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- All Practices Grid -->
+<section class="space-y-6">
+<h2 class="font-notoSerif text-3xl font-semibold">All Practices</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Practice 1 -->
+<div class="bg-surface-container-low rounded-xl p-6 group cursor-pointer hover:bg-surface-container transition-colors duration-500">
+<div class="relative aspect-[3/2] rounded-lg overflow-hidden mb-4">
+<img alt="Forest Walk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="lush green forest path with dappled sunlight and tall trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBonjZ3TqJURGFZPC4tBAZ2r7u98GTQ8G73ndpLVn64GpxQdCVFhUO6owfaYEsFK_SCZZ0sDheTp0u7iXYCym5QiY-OimUO2m3cHDcYGZwdkhD5FThHYoIp4_GmS5HN4V8HqVraR4F4IIOYk06ffscJfn22AQgf5JsJceCV6e3Znccse3XSmXjxbhV1sWZFN3u16JvO-zME5uug2Vst59Fev9OAUTFfkyeluW2atL1daDf483RN3_3nBrh6FIOzsKm-_m8tDOohRjJc"/>
+</div>
+<div class="space-y-2">
+<h4 class="font-notoSerif text-lg font-semibold">Forest Walk</h4>
+<p class="text-on-surface-variant text-sm">Guided walking meditation in nature</p>
+<div class="flex justify-between items-center pt-2">
+<span class="text-primary font-bold">20 min</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Practice 2 -->
+<div class="bg-surface-container-low rounded-xl p-6 group cursor-pointer hover:bg-surface-container transition-colors duration-500">
+<div class="relative aspect-[3/2] rounded-lg overflow-hidden mb-4">
+<img alt="Mindful Eating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="fresh fruits and vegetables arranged beautifully on a wooden table with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm2PCCnKf8ALpb096f6rJdhFdSQsw_U7AM7U2xbypg3LJMdCpxGdQqKPcj921iSODQXlVlTHeT05G2DE1_Tp54QU5SGvLLPCut9IEVJH5Lx2mHs_e5nPxt9QAG2UZWYCEYdIQBdFr0rYEk7DQcQYF0svZYkUGlGnRi3HNrVbsI_I3NdF83hiljnvW2OeTtteOSH6zCV_y1M6eg0-DHSURW2nS8Mo7USFtQ8u3N2ZFY1LZxdQGWp6BHYeMVIcaLWY55c6xliA83Y2PQ"/>
+</div>
+<div class="space-y-2">
+<h4 class="font-notoSerif text-lg font-semibold">Mindful Eating</h4>
+<p class="text-on-surface-variant text-sm">Bring awareness to your meals</p>
+<div class="flex justify-between items-center pt-2">
+<span class="text-primary font-bold">15 min</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Practice 3 -->
+<div class="bg-surface-container-low rounded-xl p-6 group cursor-pointer hover:bg-surface-container transition-colors duration-500">
+<div class="relative aspect-[3/2] rounded-lg overflow-hidden mb-4">
+<img alt="Breathing Space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="calm ocean waves gently lapping at a sandy beach with clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfLk2glIS47CFfY_miN-s-yryt1VcZcW6DD2LxqMwv0KDcyLQ9XFTrpyPs66nLlVB-booIEpR0xqbh06UcTbCEwrrw_8jUjm1qFLqhgCOhjZ4AX17YWtwG3qd-9t72mEQcic5OtKlfKHMMf5qnRUZgbGQnLYkHdg315N8RYZu3iItqhJpYF9gR5e7op6tpJIwRgvj8neIQVUKn0Dcp6lW2XbWmxEB7juuMo4FvQTanNOXgT-rxh52QKQmpAysS1UUYdEN94-8IPjGn"/>
+</div>
+<div class="space-y-2">
+<h4 class="font-notoSerif text-lg font-semibold">Breathing Space</h4>
+<p class="text-on-surface-variant text-sm">Quick breathing exercise for stress relief</p>
+<div class="flex justify-between items-center pt-2">
+<span class="text-primary font-bold">5 min</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Practice 4 -->
+<div class="bg-surface-container-low rounded-xl p-6 group cursor-pointer hover:bg-surface-container transition-colors duration-500">
+<div class="relative aspect-[3/2] rounded-lg overflow-hidden mb-4">
+<img alt="Gratitude Practice" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="sunrise over mountains with warm golden light and peaceful landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbcCcTYL-d32M-fbLs2IIeIXCWxZqZ1y_2khrMQnZtdA24hLcFZ1pZB3eW0YLaq0Yyx2cuIX_D0d5heWvg4NFodgRbHe3v5iFn1lDo_XqW6CJiGvACPpYiHdLqudSJRGzCa4w4XLNnZya-BhcWeKutQciDQUrp6GxQ7PmNyrdAGbgJeDy0wdk6Di8-t07ulMTPLzCr5i3TPuTp6czB1dzdbbFdaCkBW2z8KW38-hcZ0MkWdnm8AAGAnzyxr-_rG5EeNYy14kvA6pr4"/>
+</div>
+<div class="space-y-2">
+<h4 class="font-notoSerif text-lg font-semibold">Gratitude Practice</h4>
+<p class="text-on-surface-variant text-sm">Cultivate thankfulness and positivity</p>
+<div class="flex justify-between items-center pt-2">
+<span class="text-primary font-bold">10 min</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Practice 5 -->
+<div class="bg-surface-container-low rounded-xl p-6 group cursor-pointer hover:bg-surface-container transition-colors duration-500">
+<div class="relative aspect-[3/2] rounded-lg overflow-hidden mb-4">
+<img alt="Sound Bath" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="ethereal scene of floating musical notes and sound waves in cosmic space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClipCNpg8JU_ujJvZhlv5wha5L_KiZHXNPaeu4ypdWC-KBkCHUx5Tqc4fxvm8hi9k79FPSaRL-b6hoPR8tNH0f6W8mWsSEsbhUG9jgCTByvdLKhAJIuJ49HXCMI9hNt9WfVKYOjyP-2qq1q_HLOQ3SF7oq5G4qUsCCSytGLOVs600to42IDyTEivQi1bAg8D1rK_rJ5cg_EBpGc31DY79S8tzp7GXeRKhn6qDrwpsiREwL6IDQePBSETbImHx3_Vm0zrtSRpzpiAz4"/>
+</div>
+<div class="space-y-2">
+<h4 class="font-notoSerif text-lg font-semibold">Sound Bath</h4>
+<p class="text-on-surface-variant text-sm">Immerse in healing sound vibrations</p>
+<div class="flex justify-between items-center pt-2">
+<span class="text-primary font-bold">45 min</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Practice 6 -->
+<div class="bg-surface-container-low rounded-xl p-6 group cursor-pointer hover:bg-surface-container transition-colors duration-500">
+<div class="relative aspect-[3/2] rounded-lg overflow-hidden mb-4">
+<img alt="Yoga Nidra" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="peaceful sleeping figure in relaxed pose with soft lighting and comfortable surroundings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClipCNpg8JU_ujJvZhlv5wha5L_KiZHXNPaeu4ypdWC-KBkCHUx5Tqc4fxvm8hi9k79FPSaRL-b6hoPR8tNH0f6W8mWsSEsbhUG9jgCTByvdLKhAJIuJ49HXCMI9hNt9WfVKYOjyP-2qq1qUsCCSytGLOVs600to42IDyTEivQi1bAg8D1rK_rJ5cg_EBpGc31DY79S8tzp7GXeRKhn6qDrwpsiREwL6IDQePBSETbImHx3_Vm0zrtSRpzpiAz4"/>
+</div>
+<div class="space-y-2">
+<h4 class="font-notoSerif text-lg font-semibold">Yoga Nidra</h4>
+<p class="text-on-surface-variant text-sm">Deep relaxation and conscious sleep</p>
+<div class="flex justify-between items-center pt-2">
+<span class="text-primary font-bold">30 min</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full bg-[#fcf9f2]/80 backdrop-blur-xl flex justify-around items-center px-8 pb-6 pt-4 rounded-t-xl shadow-[0_-4px_32px_rgba(28,28,24,0.04)] z-50">
+<a href="daily.html" class="flex flex-col items-center justify-center text-[#4a654e]/50 p-2 hover:text-[#4a654e] transition-all duration-500 scale-95 active:scale-90">
+<span class="material-symbols-outlined">self_care</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Daily</span>
+</a>
+<a href="explore.html" class="flex flex-col items-center justify-center bg-[#8ba88e]/20 text-[#4a654e] rounded-full px-5 py-2 scale-95 active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Explore</span>
+</a>
+<a href="code.html" class="flex flex-col items-center justify-center text-[#4a654e]/50 p-2 hover:text-[#4a654e] transition-all duration-500 scale-95 active:scale-90">
+<span class="material-symbols-outlined">person</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Profile</span>
+</a>
+<a href="stats.html" class="flex flex-col items-center justify-center text-[#4a654e]/50 p-2 hover:text-[#4a654e] transition-all duration-500 scale-95 active:scale-90">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-manrope text-xs tracking-wide uppercase mt-1">Stats</span>
+</a>
+</nav>
+</body></html>
